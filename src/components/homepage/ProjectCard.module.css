@@ -1,0 +1,88 @@
+/* ProjectCard.module.css */
+
+.projectCard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust as needed */
+}
+
+.projectCard:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projectImage {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.projectInfo {
+    padding: 20px;
+    flex-grow: 1; /* Allow the projectInfo section to take up available space */
+}
+
+.projectDate {
+    font-size: 1.3rem;
+    color: #888;
+}
+
+.projectTitle {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.projectDescription {
+    font-size: 1.5rem;
+    color: #555;
+}
+
+.progressBar {
+    margin-top: 10px;
+    height: 20px; /* Increased height to accommodate text */
+    background-color: #f0f0f0;
+    overflow: hidden;
+    position: relative; /* Added for positioning */
+}
+
+.progressFill {
+    height: 100%;
+    background-color: #77A83A; /* Progress bar color */
+    position: relative; /* Added for positioning */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    color: white; /* Text color */
+    font-weight: bold; /* Text style */
+}
+
+.projectActions {
+    margin-top: 10px;
+    align-self: flex-end; /* Ensure the actions are at the bottom */
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center; /* Center align buttons horizontally */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.moreButton, .donateButton {
+    background-color: #77A83A; /* Button background color */
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    height: 40px; /* Fixed height for buttons */
+}
+
+.moreButton:hover, .donateButton:hover {
+    background-color: white; /* Darker shade of button color on hover */
+    border: 1px solid #77A83A;
+    color: #77A83A;
+}

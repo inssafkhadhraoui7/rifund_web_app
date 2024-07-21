@@ -1,0 +1,138 @@
+/* About.module.css */
+
+.statisticsSection {
+    padding: 50px 0;
+    align-items: center;
+  }
+  
+  .statsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: black;
+  }
+  
+  .statItem {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .statIcon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  
+  .statValue {
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .statUnderline {
+    width: 40px;
+    height: 3px;
+    background-color: #FF5C00;
+    margin: 10px auto;
+  }
+  
+  .statLabel {
+    font-size: 2em;
+    color: #FF5C00;
+    font-weight: bold;
+  }
+  
+  .sectionHeader {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  
+  .underline {
+    width: 60px;
+    height: 4px;
+    background-color: black;
+    margin: 0 auto 20px auto; /* Adjust the top, right, bottom, left margins as needed */
+  }
+  
+  .sectionTitle {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .highlight {
+    color: #e74c3c;
+  }
+  
+  .servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjusted to auto-fit */
+    gap: 10px;
+    align-items: center;
+    justify-content: center; /* Center the grid horizontally */
+    padding: 20px;
+    text-align: center; /* Center text content */
+    margin-left: 10%;
+  }
+  
+  .serviceItem {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black; /* Centered border */
+    align-items: center;
+    justify-content: center;
+    max-width: 200px; /* Adjust max-width if needed */
+    width: 100%; /* Ensure items take full width of their grid cell */
+  }
+  
+  .serviceItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+  }
+  
+  .serviceIcon {
+    max-width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .serviceName {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .servicesIllustration {
+    display: block;
+    max-width: 30%;
+    margin-top: 3%;
+   margin-left: 50%;
+  }
+  /* styles.module.css */
+
+  .aboutSection {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px;
+    width: 70%;
+    height: 500px; /* Specify height with units (e.g., px) */
+    background-color: #77a83a; /* Example background color */
+    margin: 0 auto; /* Center horizontally */
+    text-align: center; /* Center text inside */
+    font-weight: bold;
+  }
+  
+  .aboutTitle {
+    font-family: 'Times New Roman', Times, serif;
+    color: white; /* Text color */
+    font-size:40px; /* Adjust font size */
+  }
+  
+  
+  

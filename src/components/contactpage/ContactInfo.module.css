@@ -1,0 +1,55 @@
+.contactInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #EDF0C7;
+  padding: 20px;
+  gap: 20px;
+  height: 70%;
+  max-width: 100%;
+  width: 95%; /* Adjust this width according to the 'navigator' width */
+}
+.pageTitle {
+  color: #000;
+  font: 800 36px/150% Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  margin-left: 0%;
+  transition: box-shadow 0.3s ease; /* Added transition for smooth hover effect */
+}
+
+.infoItem:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Added shadow effect on hover */
+}
+
+
+.iconWrapper {
+  background-color: #77a83a;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.infoText {
+  white-space: pre-line; /* To preserve the line breaks in the text */
+}

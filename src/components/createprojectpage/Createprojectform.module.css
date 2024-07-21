@@ -1,0 +1,184 @@
+.createFormSection {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+  margin-bottom: 5%;
+  justify-content: center;
+  align-items: center;
+}
+
+.formIntro {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  text-align: left;
+  justify-content: center;
+}
+
+.formTitle {
+  color: #000;
+  font: 700 36px/54px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.verticalLine {
+  border-left: 2px solid #000;
+  height: 60px;
+  margin: 0 20px;
+}
+
+.formDescription {
+  color: #000;
+  font: 300 15px/23px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 550px; /* Limit the width to 600px */
+}
+
+.leftContent {
+  flex: 1;
+}
+
+.thankYouNote {
+  color: #000;
+  font: 500 25px/23px Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.followUs {
+  color: #ff5c00;
+  font: 500 20px/150% Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 10px;
+}
+
+.socialIcon {
+  width: 40px;
+  height: 40px;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formRow {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.formGroup {
+  flex: 1;
+  position: relative;
+}
+
+.formLabel {
+  display: block;
+  color: #000;
+  font: 600 16px/150% Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  margin-bottom: 8px;
+}
+
+.formInput,
+.formTextarea,
+.formSelect {
+  width: 100%; /* Set to full width */
+  padding: 8px 10px; /* Adjusted padding */
+  border: 1px solid #77a83a;
+  background-color: var(--sds-color-background-default-default);
+  color: #828282;
+  font: 500 16px/150% Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  border-radius: 5px;
+}
+
+.formTextarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+.iconButton {
+  position: absolute;
+  right: 0px;
+  top: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #77a83a;
+  font-size: 1.5em;
+}
+
+.hiddenFileInput {
+  display: none;
+}
+
+.submitButton {
+  background-color: #77a83a;
+  color: #fff;
+  border: none;
+  padding: 8px 32px;
+  font: 500 20px/150% Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  cursor: pointer;
+  margin-top: 24px;
+  transition: background-color 0.3s, border-color 0.3s;
+  align-self: center;
+  border-radius: 5px;
+}
+
+.submitButton:hover {
+  background-color: #fff;
+  color: #77a83a;
+  border: 1px solid #77a83a;
+}
+
+.errorMessage {
+  color: red;
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: #ffe6e6;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .mainContent {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%; /* Adjust to take full width on small screens */
+  }
+
+  .formIntro {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .leftContent {
+    margin-bottom: 20px;
+  }
+
+  .formRow {
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .submitButton {
+    width: 100%;
+  }
+}

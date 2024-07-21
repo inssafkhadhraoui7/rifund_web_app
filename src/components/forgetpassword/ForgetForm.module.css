@@ -1,0 +1,122 @@
+.forgetFormSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forgetIcon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .forgetInstructions {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .forgetForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .inputGroup {
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .visuallyHidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 10px 40px 10px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .inputIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+  }
+  
+  .submitButton {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #77a83a;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #fff;
+    color: #77a83a;
+    border: 1px solid #77a83a;
+  }
+  
+
+ 
+  
+  .signinPrompt {
+    display: flex;
+    margin-top: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  
+  .promptText {
+    margin: 10px 0;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .signinLink {
+    font-size: 16px;
+    color: black;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .signinLink:hover {
+    color: #77a83a;
+  }
+  .errorMessage {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+  }

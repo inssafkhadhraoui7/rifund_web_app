@@ -1,0 +1,41 @@
+/* Home.module.css */
+/* Home.module.css */
+.imageContainer {
+  position: relative;
+  width: 100%;
+  height: auto; /* Ensures image maintains aspect ratio */
+}
+
+.imageContainer img {
+  width: 100%;
+  height:700px;
+  display: block; /* Removes extra space below image */
+}
+
+.overlayText {
+  position: absolute;
+  top: 60%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  color: black;
+  font-size: 24px;
+  line-height: 1.5;
+
+}
+
+.Text {
+  margin-bottom: 10px;
+  border: 1px solid black; /* Add a white border around the overlay text */
+  padding: 5px; /* Add padding inside the border */
+}
+
+
+.text2 {
+  color: black;
+  margin-top: 10px;
+  font-size: 50px;
+  line-height: 1.3;
+  font-weight: bold;
+}
+

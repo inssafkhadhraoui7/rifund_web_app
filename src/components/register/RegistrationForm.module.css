@@ -1,0 +1,114 @@
+.registrationFormSection {
+  max-width: 900px; /* Increase this value to make the form wider */
+  margin: 0 auto; /* Center the form within the formWrapper */
+  padding: 20px;
+  border: 1px solid black;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.registrationFormTitle {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.registrationInstructions {
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup {
+  display: flex; /* Display items in a row */
+  align-items: center; /* Align items vertically */
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.visuallyHidden {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.inputField {
+  width: calc(100% - 40px); /* Adjust width to fit the icon */
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.inputIcon {
+  width: 18px;
+  height: 20px;
+  margin-left: -30px; /* Adjust positioning of the icon */
+}
+
+.submitButton {
+  width: 80%;
+  margin: 0 auto; /* Center the button horizontally */
+  padding: 12px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #77a83a;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #fff;
+  color: #77a83a;
+  border: 1px solid #77a83a;
+}
+
+.signupPrompt {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.promptIcons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.promptIcon {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.promptText {
+  margin-bottom: 10px;
+}
+
+.signupLink {
+  color: #77a83a;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.signupLink:hover {
+  color: #77a83a;
+}
+.errorMessage {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
