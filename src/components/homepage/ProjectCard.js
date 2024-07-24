@@ -2,6 +2,9 @@ import React from 'react';
 import styles from './ProjectCard.module.css';
 
 function ProjectCard({ date, title, description, progress, image }) {
+  const handleClick = () => {
+    window.location.href = '/financeprojet'; 
+  };
   return (
     <article className={styles.projectCard}>
       <img src={image} alt={title} className={styles.projectImage} />
@@ -19,7 +22,7 @@ function ProjectCard({ date, title, description, progress, image }) {
         </div>
         <div className={styles.buttonWrapper}>
           <button className={styles.moreButton}>Plus</button>
-          <button className={styles.donateButton}>Faire un don</button>
+          <button className={styles.donateButton} onClick={handleClick}>Faire un don</button>
         </div>
       </div>
     </article>

@@ -22,9 +22,9 @@ function Footer() {
           <h3 className={styles.sectionTitle}>Actualités</h3>
           <nav>
             <ul className={styles.footerNav}>
-              <li><a href="#projects">Projets</a></li>
+              <li><a href="/">Projets</a></li>
               <li><a href="#stats">Statistiques</a></li>
-              <li><a href="#contacts">Contacts</a></li>
+              <li><a href="/contact">Contacts</a></li>
             </ul>
           </nav>
         </div>
