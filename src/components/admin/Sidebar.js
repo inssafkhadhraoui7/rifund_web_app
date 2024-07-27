@@ -55,7 +55,7 @@ function Sidebar({ activeItem, onSetActiveItem }) {
         {menuItems.map((item) => (
           <button 
             key={item.id} 
-            className={`${styles.menuItem} ${activeItem === item.id ? styles.active : ''}`}
+            className={`${styles.menuItem} ${activeItem === item.id ? styles.active : 'profile'}`}
             onClick={() => handleItemClick(item.id)}
           >
             <FontAwesomeIcon icon={item.icon} className={styles.menuIcon} />

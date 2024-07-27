@@ -51,6 +51,7 @@ function Profile() {
 
   return (
     <div className={styles.profile}>
+      <h1 className={styles.h1}>Bienvenu,</h1>
       <div className={styles.profilePhotoContainer} onClick={handlePhotoClick}>
         <img
           src={userInfo.photo || 'default-profile.jpg'} // Use a default profile photo if none is set
