@@ -1,0 +1,23 @@
+/* Dashbord.module.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4; /* Example background color */
+}
+
+.content {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+  background-color: #ffffff; /* Example background color */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example shadow for main content */
+  border-radius: 8px; /* Example border radius */
+}

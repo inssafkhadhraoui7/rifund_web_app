@@ -1,0 +1,104 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profilePhotoContainer {
+  position: relative;
+  cursor: pointer; /* Indicates that the area is clickable */
+  margin-bottom: 20px;
+}
+
+.profilePhotoImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.profilePhotoInput {
+  display: none; /* Hide the file input */
+}
+
+.profileForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.profileInput {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.saveButton,
+.cancelButton {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.saveButton {
+  background-color: #77A83A;
+  color: #fff;
+}
+
+.saveButton:hover {
+  background-color: #6a9a2b;
+}
+
+.cancelButton {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.cancelButton:hover {
+  background-color: #d0d0d0;
+}
+
+.profileInfo {
+  text-align: center;
+}
+
+.profileName {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.profileRole {
+  display: block;
+  font-size: 1rem;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.editButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #77A83A;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.editButton:hover {
+  background-color: #6a9a2b;
+}

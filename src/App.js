@@ -13,6 +13,8 @@ import ForgetPassword from "./pages/ForgetPassword";
 import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import Dashbord from "./pages/admin/Dashbord";
+import ManageCategories from './components/admin/ManageCategories';
 
 function App() {
   const action = useNavigationType();
@@ -66,6 +68,10 @@ function App() {
         title = "details projet page";
         metaDescription = "Welcome to these details project Page";
         break;
+        case "/dashbord":
+          title = "dashbord admin";
+          metaDescription = "Welcome to thesedashbord admin Page";
+          break;
       default:
         break;
     }
@@ -87,7 +93,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Dashbord />} />
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<LoginPage />} />
@@ -96,6 +102,7 @@ function App() {
         <Route path="/creerprojet" element={<Createproject />} />
         <Route path="/financeprojet" element={<FinancePage />} />
         <Route path="/projetdetails" element={<DetailsPage />} />
+        <Route path="/dashbord" element={<Dashbord />} />
       </Routes>
     </div>
   );
