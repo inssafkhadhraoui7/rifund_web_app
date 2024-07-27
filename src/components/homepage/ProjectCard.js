@@ -1,10 +1,16 @@
+import PropTypes from 'prop-types';
 import React from 'react';
 import styles from './ProjectCard.module.css';
 
 function ProjectCard({ date, title, description, progress, image }) {
-  const handleClick = () => {
-    window.location.href = '/financeprojet'; 
+  const handleDonateClick = () => {
+    window.location.href = '/financeprojet';
   };
+
+  const handleDetailsClick = () => {
+    window.location.href = '/projetdetails';
+  };
+
   return (
     <article className={styles.projectCard}>
       <img src={image} alt={title} className={styles.projectImage} />
@@ -21,12 +27,24 @@ function ProjectCard({ date, title, description, progress, image }) {
           </div>
         </div>
         <div className={styles.buttonWrapper}>
-          <button className={styles.moreButton}>Plus</button>
-          <button className={styles.donateButton} onClick={handleClick}>Faire un don</button>
+          <button className={styles.moreButton} onClick={handleDetailsClick}>
+            Plus
+          </button>
+          <button className={styles.donateButton} onClick={handleDonateClick}>
+            Faire un don
+          </button>
         </div>
       </div>
     </article>
   );
 }
+
+ProjectCard.propTypes = {
+  date: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  progress: PropTypes.number.isRequired,
+  image: PropTypes.string.isRequired,
+};
 
 export default ProjectCard;

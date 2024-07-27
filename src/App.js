@@ -5,14 +5,14 @@ import {
   useLocation,
   useNavigationType,
 } from "react-router-dom";
-import Contact from './pages/contact';
+import Contact from "./pages/contact";
 import Createproject from "./pages/Createproject";
+import DetailsPage from "./pages/DetailsPage";
+import FinancePage from "./pages/FinancePage";
 import ForgetPassword from "./pages/ForgetPassword";
-import Home from './pages/Home';
+import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
-import FinancePage from "./pages/FinancePage";
-
 
 function App() {
   const action = useNavigationType();
@@ -58,9 +58,13 @@ function App() {
         title = "create project page";
         metaDescription = "Welcome to these create project Page";
         break;
-        case "/financeprojet":
+      case "/financeprojet":
         title = "finance projet page";
         metaDescription = "Welcome to these create project Page";
+        break;
+      case "/projetdetails":
+        title = "details projet page";
+        metaDescription = "Welcome to these details project Page";
         break;
       default:
         break;
@@ -91,6 +95,7 @@ function App() {
         <Route path="/password" element={<ForgetPassword />} />
         <Route path="/creerprojet" element={<Createproject />} />
         <Route path="/financeprojet" element={<FinancePage />} />
+        <Route path="/projetdetails" element={<DetailsPage />} />
       </Routes>
     </div>
   );
