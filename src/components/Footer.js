@@ -1,11 +1,12 @@
 import React from 'react';
 import styles from './Footer.module.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const socialIcons = [
-  { src: "facebook.png", alt: "Facebook", url: "https://grouperif.com/" },
-  { src: "site.png", alt: "Site", url: "https://www.rifund.com" },
-  { src: "instagram.png", alt: "Instagram", url: "https://www.instagram.com/rifund" },
-  { src: "email.png", alt: "Email", url: "mailto:rhgrouperif@gmail.com" }
+  { iconClass: "fab fa-facebook-f", alt: "Facebook", url: "https://grouperif.com/" },
+  { iconClass: "fas fa-globe", alt: "Site", url: "https://www.rifund.com" },
+  { iconClass: "fab fa-instagram", alt: "Instagram", url: "https://www.instagram.com/rifund" },
+  { iconClass: "fas fa-envelope", alt: "Email", url: "mailto:rhgrouperif@gmail.com" }
 ];
 
 function Footer() {
@@ -38,19 +39,19 @@ function Footer() {
             <p className={styles.socialText}>Suivez nous sur :</p>
             <div className={styles.socialIcons}>
               {socialIcons.map((icon, index) => (
-                <a key={index} href={icon.url} target="_blank" rel="noopener noreferrer">
-                  <img src={icon.src} alt={icon.alt} className={styles.socialIcon} />
+                <a key={index} href={icon.url} target="_blank" rel="noopener noreferrer" className={styles.iconButton}>
+                  <i className={icon.iconClass} aria-hidden="true" title={icon.alt}></i>
                 </a>
               ))}
             </div>
           </div>
         </div>
       </div>
-      <div className={styles.copyrightSection}>
-        <img src="rifund.png" alt="Rifund Logo" className={styles.footerLogo} />
-        <p className={styles.copyrightText}>Rifund</p>
-        <p className={styles.copyrightYear}>Copyright © 2024</p>
-      </div>
+        <div className={styles.copyrightSection}>
+          <img src="rifund.png" alt="Rifund Logo" className={styles.footerLogo} />
+          <p className={styles.copyrightText}>Rifund</p>
+          <p className={styles.copyrightYear}>Copyright © 2024</p>
+        </div>
     </footer>
   );
 }

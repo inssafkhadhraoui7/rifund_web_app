@@ -3,10 +3,9 @@
 .projectCard {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
     justify-items: center;
     width: 100%;
-    max-width: 1200px; /* Adjust as needed */
+    max-width: 1600px; /* Adjust as needed */
 }
 
 .projectCard:hover {
@@ -14,9 +13,10 @@
 }
 
 .projectImage {
-    width: 100%;
+    width: 95%;
     height: auto;
-    border-bottom: 1px solid #e0e0e0;
+    margin: 0; /* Ensure no margin is applied */
+    border-radius: 0; /* Ensure no border radius is applied */
 }
 
 .projectInfo {

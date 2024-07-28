@@ -54,7 +54,7 @@ function Profile() {
       <h1 className={styles.h1}>Bienvenu,</h1>
       <div className={styles.profilePhotoContainer} onClick={handlePhotoClick}>
         <img
-          src={userInfo.photo || 'default-profile.jpg'} // Use a default profile photo if none is set
+          src={userInfo.photo || 'insaf.jpg'} // Use a default profile photo if none is set
           alt="Profile"
           className={styles.profilePhotoImage}
         />

@@ -79,7 +79,7 @@ function ManageCategories() {
           {/* Replace with dynamic data */}
           <tr>
             <td>1</td>
-            <td><img src="example-image.jpg" alt="Category" className={styles.image} /></td>
+            <td><img src="sante.png" alt="Category" className={styles.image} /></td>
             <td>Santé</td>
             <td>01/01/2024</td>
             <td>

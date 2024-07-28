@@ -1,10 +1,18 @@
 import React from 'react';
 import styles from './categorie.module.css';
 
-function categorie() {
+function Categorie() {
   const categories = [
-    "Tous", "Santé", "Enfants", "Art", "Solidarité",
-    "Education", "Association", "Animale", "Mariage", "Evènement"
+    { name: "Tous" },
+    { name: "Santé", image: "sante.png" },
+    { name: "Enfants", image: "sante.png" },
+    { name: "Art", image: "sante.png" },
+    { name: "Solidarité", image: "sante.png" },
+    { name: "Education", image: "sante.png" },
+    { name: "Association", image: "sante.png" },
+    { name: "Animale", image: "sante.png" },
+    { name: "Mariage", image: "sante.png" },
+    { name: "Evènement", image: "sante.png" }
   ];
 
   return (
@@ -17,7 +25,10 @@ function categorie() {
       <div className={styles.categoryList}>
         {categories.map((category, index) => (
           <button key={index} className={`${styles.categoryButton} ${index === 0 ? styles.active : ''}`}>
-            {category}
+            {category.name !== "Tous" && (
+              <img src={`${category.image}`} alt={category.name} className={styles.categoryImage} />
+            )}
+            {category.name}
           </button>
         ))}
       </div>
@@ -25,4 +36,4 @@ function categorie() {
   );
 }
 
-export default categorie;
+export default Categorie;

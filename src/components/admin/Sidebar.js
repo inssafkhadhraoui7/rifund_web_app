@@ -32,9 +32,13 @@ function Sidebar({ activeItem, onSetActiveItem }) {
       <h1 className={styles.logo}><strong>RiFund</strong></h1>
       <div className={styles.userProfile}>
         <hr className={styles.divider} />
-        <FontAwesomeIcon icon={faUserCircle} className={styles.avatar} />
+        <img
+          src={ 'insaf.jpg'} 
+          alt="Profile"
+          className={styles.profilePhotoImage}
+        />
         <div className={styles.userInfo}>
-          <span className={styles.userName}>Misaaoui Imen</span>
+          <span className={styles.userName}>Khadhraoui Insaf</span>
           <FontAwesomeIcon 
             icon={faCaretDown} 
             className={styles.userStatus} 
