@@ -1,22 +1,96 @@
 .detailsPage {
+    margin-top: 3%;
     display: flex;
-    align-items: center;
-    justify-content: center; 
+    align-items: flex-start; 
+    justify-content: flex-start; 
     padding: 50px;
+    gap: 20px; 
 }
 
-.imgtext{
-    display: block;
+.imgtext {
     padding: 10px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 580px; 
-  }
-img{
+    max-width: 570px;
+}
+
+img {
     padding-left: 5%;
     border-radius: 10px;
     width: 500px;
     height: 500px;
+}
+
+.descriptiontitle {
+    padding: 20px;
+    font-weight: bold;
+}
+
+.paragrap {
+    padding-left: 20px;
+    text-align: justify;
+}
+
+.description {
+    padding: 10px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.money{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.contrib{
+    color: gray;
+}
+.green {
+    font-weight: bold;
+    color: rgb(25, 113, 25);
+}
+
+.red {
+    color: red;
+    font-weight: bold;
+}
+.communauty{
+    font-size: 2rem;
+}
+.progressbarbutton{
+    margin-left: 10%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.donbutton{
+    background-color: #77a83a;
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 11px 22px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 400px;
+}
+.donbutton:hover{
+    background-color: #fff;
+    color: #77a83a;
+    border: 1px solid #77a83a; /* Border on hover */
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Adjust according to your layout */
+  }
+.circularbar{
+    margin-left: 10%;
 }
   

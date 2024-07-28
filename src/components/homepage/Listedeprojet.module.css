@@ -1,80 +1,79 @@
 /* ListeDeProjet.module.css */
 
 .projectsSection {
-    margin: 20px;
-    padding: 20px;
-  }
-  
-  .sectionTitle {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .highlight {
-    color: #77A83A; /* Or any other highlight color */
-  }
-  
-  .underline {
-    width: 250px;
-    height: 3px;
-    background-color: #77A83A;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  .parent-container {
-    text-align: center;
-  }
-  
-  .searchForm {
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center; /* Center align flex items horizontally */
-  }
-  
-  .inputContainer {
-    position: relative;
-    display: flex;
-    align-items: center; /* Center items vertically within container */
-  }
-  
-  .searchInput {
-    padding: 8px 30px 8px 8px; /* Adjust padding to accommodate the icon */
-    border: 1px solid #ccc;
-    width: 500px;
-    height: 50px;
-    font-size: 1rem;
-  }
-  
-  .searchIcon {
-    position: absolute;
-    right: 10px; /* Adjust as needed to position the icon within the input */
-    top: 50%; /* Vertically center the icon */
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-  }
-  
-  
-  .featuredTitle {
-    font-size: 2rem;
-    margin-top: 20px;
-    margin-left: 150px;
-    text-align: left; /* Center align the featured title */
-  }
-  .featuredTitle:hover {
-    color:#77A83A;
-  }
-  .projectGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 20px;
-    max-width: 1000px; /* Adjust the max-width as needed */
-    margin: 0 auto; /* Center the grid horizontally */
-  }
-  
-  
-  /* Add styles for ProjectCard if needed */
-  
+  margin: 20px;
+  padding: 20px;
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.highlight {
+  color: #77A83A; /* Or any other highlight color */
+}
+
+.underline {
+  width: 250px;
+  height: 3px;
+  background-color: #77A83A;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parent-container {
+  text-align: center;
+}
+
+.searchForm {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center; /* Center align flex items horizontally */
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center; /* Center items vertically within container */
+}
+
+.searchInput {
+  padding: 8px 30px 8px 8px; /* Adjust padding to accommodate the icon */
+  border: 1px solid #ccc;
+  width: 500px;
+  height: 50px;
+  font-size: 1rem;
+}
+
+.searchIcon {
+  position: absolute;
+  right: 10px; /* Adjust as needed to position the icon within the input */
+  top: 50%; /* Vertically center the icon */
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+
+.featuredTitle {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-left: 150px;
+  text-align: left; /* Center align the featured title */
+}
+.featuredTitle:hover {
+  color:#77A83A;
+}
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  max-width: 1000px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the grid horizontally */
+}
+
+
+/* Add styles for ProjectCard if needed */

@@ -5,6 +5,7 @@ import {
   useLocation,
   useNavigationType,
 } from "react-router-dom";
+import Dashbord from "./pages/admin/Dashbord";
 import Contact from "./pages/contact";
 import Createproject from "./pages/Createproject";
 import DetailsPage from "./pages/DetailsPage";
@@ -13,8 +14,6 @@ import ForgetPassword from "./pages/ForgetPassword";
 import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
-import Dashbord from "./pages/admin/Dashbord";
-import ManageCategories from './components/admin/ManageCategories';
 
 function App() {
   const action = useNavigationType();

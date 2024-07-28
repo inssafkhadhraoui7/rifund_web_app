@@ -10,7 +10,7 @@ function FinancePage() {
       <Header />
       <h1 className={styles.pageTitle}>Financer projet</h1>
       <main className={styles.mainContent}>
-        <div className="">
+        <div className={styles.imgparagraph}>
           <img alt="" src="cartebancaire.png" className={styles.img}/>
           <div className="paragraphe">
             <p className={styles.paragraph}>

@@ -1,62 +1,61 @@
 /* ProjectGrid.module.css */
 
 .projectGridSection {
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .projectGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 1.5rem;
-    justify-items: center;
-    width: 100%;
-    max-width: 1200px; /* Adjust as needed */
-  }
-  
-  .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-  }
-  
-  .paginationButton {
-    background: none;
-    border: none;
-    color: #333;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s, color 0.3s;
-  }
-  
-  .paginationButton:hover {
-    background-color: #ddd;
-    color: #000;
-  }
-  
-  .paginationButton:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-  
-  .paginationButton img.paginationIcon {
-    width: 20px;
-    height: 20px;
-  }
-  
-  .paginationButton.active {
-    font-weight: bold;
-    background-color: #333;
-    color: #fff;
-    border-radius: 50%;
-  }
-  
-  .paginationEllipsis {
-    padding: 0 0.5rem;
-    font-size: 1.2rem;
-  }
-  
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  width: 100%;
+  max-width: 1200px; /* Adjust as needed */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.paginationButton {
+  background: none;
+  border: none;
+  color: #333;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.paginationButton:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.paginationButton:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.paginationButton img.paginationIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.paginationButton.active {
+  font-weight: bold;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.paginationEllipsis {
+  padding: 0 0.5rem;
+  font-size: 1.2rem;
+}

@@ -71,7 +71,7 @@ function Createprojectform() {
               type="text"
               id="title"
               className={styles.formInput}
-              placeholder="Ecrivez le titre de votre projet"
+              placeholder="Mot ou mots significatifs à votre projet"
               value={title}
               onChange={handleTitleChange}
             />
@@ -85,7 +85,7 @@ function Createprojectform() {
               type="text"
               id="description"
               className={styles.formTextarea}
-              placeholder="Ecrivez description à votre projet"
+              placeholder="Description détaillé de votre projet"
               value={description}
               onChange={handleDescriptionChange}
             />
@@ -99,7 +99,7 @@ function Createprojectform() {
               type="text"
               id="images"
               className={styles.formInput}
-              placeholder="Donnez les images de votre projet"
+              placeholder="Images approximatives de votre projet "
               value={images}
               onChange={handleImagesChange}
             />
@@ -127,7 +127,7 @@ function Createprojectform() {
               type="text"
               id="budget"
               className={styles.formInput}
-              placeholder="Donnez le budget de votre projet"
+              placeholder="Budget à atteindre"
               value={budget}
               onChange={handleBudgetChange}
             />
@@ -159,7 +159,7 @@ function Createprojectform() {
               type="date"
               id="date"
               className={styles.formInput}
-              placeholder="Donnez la date de votre projet"
+              placeholder="Date de fin de publication"
               value={date}
               onChange={handleDateChange}
             />
