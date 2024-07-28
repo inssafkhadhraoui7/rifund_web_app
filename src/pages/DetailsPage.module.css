@@ -78,19 +78,28 @@ img {
     font-weight: 600;
     cursor: pointer;
     align-self: flex-end;
-    margin-top: 400px;
+    margin-top: 300px;
 }
 .donbutton:hover{
     background-color: #fff;
     color: #77a83a;
-    border: 1px solid #77a83a; /* Border on hover */
+    border: 1px solid #77a83a; 
 }
 .container {
     display: flex;
     flex-direction: column;
-    height: 100%; /* Adjust according to your layout */
+    height: 100%; 
   }
 .circularbar{
     margin-left: 10%;
 }
+.customLink {
+    text-decoration: none; 
+    color: inherit; 
+  }
+  
+  .customLink:hover, .customLink:focus, .customLink:active {
+    color: inherit; 
+  }
+  
   

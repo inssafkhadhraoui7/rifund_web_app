@@ -43,9 +43,11 @@ function DetailsPage() {
             <span className={styles.red}>3000$</span>
           </p>
           <div>
+            <a href="/CommunautyPage" className={styles.customLink}>
             <p className={styles.communauty}>
               <FontAwesomeIcon icon={faUsers} /> Communauté Ferme
             </p>
+            </a>
           </div>
         </div>
         <div className={styles.progressbarbutton}>

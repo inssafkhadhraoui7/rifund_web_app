@@ -14,6 +14,7 @@ import ForgetPassword from "./pages/ForgetPassword";
 import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
+import CommunautyPage from "./pages/CommunautyPage";
 
 function App() {
   const action = useNavigationType();
@@ -102,6 +103,7 @@ function App() {
         <Route path="/financeprojet" element={<FinancePage />} />
         <Route path="/projetdetails" element={<DetailsPage />} />
         <Route path="/dashbord" element={<Dashbord />} />
+        <Route path="/CommunautyPage" element={<CommunautyPage />}/>
       </Routes>
     </div>
   );

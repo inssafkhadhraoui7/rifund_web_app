@@ -1,0 +1,105 @@
+.chatBox {
+    width: 350px;
+    height: 400px;
+    background-color: #9ea260;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .chatHeader {
+    background-color: #ebefa8;
+    color: gray;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .chatBody {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #fff;
+  }
+  
+  .chatMessage {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background-color: #e4e6eb;
+    border-radius: 10px;
+  }
+  
+  .chatFooter {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #ebefa8;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chatInput {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    margin-left: 5px;
+  }
+  
+  .sendButton {
+    padding: 10px;
+    background-color: #4267b2;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .sendButton:hover {
+    background-color: #77a83a;
+  }
+  
+  .fileInputLabel {
+    margin-right: 10px;
+    cursor: pointer;
+    color: #77a83a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #77a83a;
+  }
+  
+  .audioButton {
+    margin-right: 10px;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #77a83a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .audioButton:hover {
+    background-color: #77a83a;
+  }
+  
+  .fileInput {
+    display: none;
+  }
+  
+  .chatImage {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+  }
+  
