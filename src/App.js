@@ -1,10 +1,5 @@
 import React, { useEffect } from "react";
-import {
-  Route,
-  Routes,
-  useLocation,
-  useNavigationType,
-} from "react-router-dom";
+import { Route, Routes, useLocation, useNavigationType } from "react-router-dom";
 import Dashbord from "./pages/admin/Dashbord";
 import Contact from "./pages/contact";
 import Createproject from "./pages/Createproject";
@@ -15,6 +10,12 @@ import Home from "./pages/Home";
 import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import CommunautyPage from "./pages/CommunautyPage";
+import ProfileUtilisateur from "./pages/ProfileUtilisateur";
+
+// Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
+// Bootstrap Bundle JS
+import "bootstrap/dist/js/bootstrap.bundle.min";
 
 function App() {
   const action = useNavigationType();
@@ -68,10 +69,14 @@ function App() {
         title = "details projet page";
         metaDescription = "Welcome to these details project Page";
         break;
-        case "/dashbord":
-          title = "dashbord admin";
-          metaDescription = "Welcome to thesedashbord admin Page";
-          break;
+      case "/dashbord":
+        title = "dashbord admin";
+        metaDescription = "Welcome to thesedashbord admin Page";
+        break;
+      case "/profile":
+        title = "profile utilisateur";
+        metaDescription = "Welcome to profile utilisateur Page";
+        break;
       default:
         break;
     }
@@ -81,9 +86,7 @@ function App() {
     }
 
     if (metaDescription) {
-      const metaDescriptionTag = document.querySelector(
-        'head > meta[name="description"]'
-      );
+      const metaDescriptionTag = document.querySelector('head > meta[name="description"]');
       if (metaDescriptionTag) {
         metaDescriptionTag.content = metaDescription;
       }
@@ -103,7 +106,8 @@ function App() {
         <Route path="/financeprojet" element={<FinancePage />} />
         <Route path="/projetdetails" element={<DetailsPage />} />
         <Route path="/dashbord" element={<Dashbord />} />
-        <Route path="/CommunautyPage" element={<CommunautyPage />}/>
+        <Route path="/CommunautyPage" element={<CommunautyPage />} />
+        <Route path="/profile" element={<ProfileUtilisateur />} />
       </Routes>
     </div>
   );

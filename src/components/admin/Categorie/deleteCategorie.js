@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './deleteCatégorie.module.css'; // Create this CSS file for styling
+import styles from './deleteCategorie.module.css'; // Create this CSS file for styling
 
 function DeleteConfirmModal({ onClose, onConfirm }) {
   return (

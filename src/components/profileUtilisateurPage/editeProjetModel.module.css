@@ -1,0 +1,133 @@
+.container {
+  border-top: 20px #77a83a solid;
+  flex-grow: 1;
+  height: auto;
+  padding-block: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom-width: 0px !important;
+}
+.container > div:first-child {
+  padding: 10px;
+}
+.container img {
+  border-radius: 0%;
+  width: 400px;
+  height: 300px;
+}
+
+.actions {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+.actions span {
+  cursor: pointer;
+}
+.container table {
+  border: solid 2px #77a83a;
+}
+td {
+  vertical-align: middle;
+}
+
+tbody img {
+  width: 120px;
+  height: 80px;
+  border-radius: 0;
+}
+tbody i {
+  font-size: x-large;
+}
+
+.createButton,
+.supButton {
+  background-color: #77a83a;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-right: 4%;
+  padding: 11px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  width: fit-content;
+  align-self: end;
+  margin-bottom: 40px;
+}
+.createButton:hover {
+  background-color: #fff;
+  color: #77a83a;
+  border: 1px solid #77a83a; /* Border on hover */
+}
+.supButton {
+  background-color: lightslategrey;
+  color: black;
+}
+.supButton:hover {
+  background-color: gray;
+}
+
+.buttonIcon {
+  width: 30px;
+  height: 30px;
+}
+.liens {
+  vertical-align: top;
+}
+.divButton {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.card label {
+  font-weight: 600;
+}
+.card input {
+  margin-bottom: 10px;
+}
+.cardText {
+  padding: 30px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.card > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.progressBar {
+  width: 100%;
+  height: 25px;
+  background-color: #edf0c7;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.progressBar div {
+  display: inline-block;
+  height: 100%;
+  width: 88%;
+  background-color: #77a83a;
+  border-radius: 20px;
+}
+.progressBar span {
+  position: absolute;
+  right: 5px;
+}

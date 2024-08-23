@@ -1,12 +1,12 @@
+import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useState } from 'react';
+import { FaPlus } from 'react-icons/fa';
+import AddCategoryForm from './Categorie/AddCategoryForm';
+import ModifyCategoryForm from './Categorie/ModifyCategoryForm';
+import DeleteConfirmModal from './Categorie/deleteCategorie';
 import styles from './ManageCategories.module.css';
 import SearchBar from './SearchBar';
-import { FaPlus } from 'react-icons/fa';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
-import AddCategoryForm from './Categorie/AddCategoryForm'; 
-import ModifyCategoryForm from './Categorie/ModifyCategoryForm'; 
-import DeleteConfirmModal from './Categorie/deleteCatégorie';
 
 function ManageCategories() {
   const [showAddForm, setShowAddForm] = useState(false);

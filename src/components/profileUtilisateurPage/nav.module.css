@@ -1,0 +1,22 @@
+.navStyle {
+  height: 60vh;
+}
+.menu {
+  margin: 0;
+  list-style: none;
+}
+.menu li {
+  width: 300px;
+  border: solid 1px black;
+  padding: 20px;
+  font-size: 18px;
+}
+.menu li i {
+  margin-right: 10px;
+}
+.active {
+  background-color: #77a83a;
+}
+.menu li:hover {
+  background-color: #77a83a;
+}

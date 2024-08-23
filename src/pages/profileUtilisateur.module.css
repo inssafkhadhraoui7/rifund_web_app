@@ -1,0 +1,9 @@
+.profile {
+  margin-top: 150px;
+}
+.container {
+  display: flex;
+  gap: 100px;
+  width: 95vw;
+  margin-bottom: 100px;
+}
