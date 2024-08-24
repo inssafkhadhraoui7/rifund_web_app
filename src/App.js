@@ -96,7 +96,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/" element={<Dashbord />} />
+        <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/login" element={<LoginPage />} />

@@ -1,5 +1,9 @@
 import React, { useState } from 'react';
 import styles from './RegistrationForm.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faEnvelope, faLock } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
+
 
 function RegistrationForm() {
   const [lastName, setLastName] = useState('');
@@ -56,7 +60,7 @@ function RegistrationForm() {
             value={lastName}
             onChange={handleLastNameChange}
           />
-          <img src="user2.png" alt="" className={styles.inputIcon} />
+          <FontAwesomeIcon icon={faUser} className={styles.inputIcon} />
         </div>
         <div className={styles.inputGroup}>
           <label htmlFor="firstName" className={styles.visuallyHidden}>Prénom</label>
@@ -68,7 +72,7 @@ function RegistrationForm() {
             value={firstName}
             onChange={handleFirstNameChange}
           />
-          <img src="user2.png" alt="" className={styles.inputIcon} />
+          <FontAwesomeIcon icon={faUser} className={styles.inputIcon} />
         </div>
         <div className={styles.inputGroup}>
           <label htmlFor="email" className={styles.visuallyHidden}>Email</label>
@@ -80,7 +84,7 @@ function RegistrationForm() {
             value={email}
             onChange={handleEmailChange}
           />
-          <img src="email.png" alt="" className={styles.inputIcon} />
+          <FontAwesomeIcon icon={faEnvelope} className={styles.inputIcon} />
         </div>
         <div className={styles.inputGroup}>
           <label htmlFor="password" className={styles.visuallyHidden}>Mot de passe</label>
@@ -92,7 +96,7 @@ function RegistrationForm() {
             value={password}
             onChange={handlePasswordChange}
           />
-          <img src="password.png" alt="" className={styles.inputIcon} />
+          <FontAwesomeIcon icon={faLock} className={styles.inputIcon} />
         </div>
         <div className={styles.inputGroup}>
           <label htmlFor="confirmPassword" className={styles.visuallyHidden}>Confirmer le mot de passe</label>
@@ -104,15 +108,15 @@ function RegistrationForm() {
             value={confirmPassword}
             onChange={handleConfirmPasswordChange}
           />
-          <img src="password.png" alt="" className={styles.inputIcon} />
+          <FontAwesomeIcon icon={faLock} className={styles.inputIcon} />
         </div>
         {error && <p className={styles.errorMessage}>{error}</p>}
         <button type="submit" className={styles.submitButton}>Créer un compte</button>
       </form>
       <div className={styles.signupPrompt}>
         <div className={styles.promptIcons}>
-          <img src="face.png" alt="" className={styles.promptIcon} />
-          <img src="gmail.png" alt="" className={styles.promptIcon} />
+        <FontAwesomeIcon icon={faFacebookF} className={styles.promptIcon} />
+        <FontAwesomeIcon icon={faEnvelope} className={styles.promptIcon} />
         </div>
         <p className={styles.promptText}>Vous avez déjà un compte?</p>
         <button onClick={handleSignupClick} className={styles.signupLink}>Se connecter</button>

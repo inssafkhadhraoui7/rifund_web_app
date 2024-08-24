@@ -14,7 +14,7 @@ function About() {
     { icon: "bank.png", name: "Dépenser" }
   ];
   return (
-    <section className={styles.statisticsSection}>
+    <section id="stats" className={styles.statisticsSection}>
       <div className={styles.statsContainer}>
         {stats.map((stat, index) => (
           <div key={index} className={styles.statItem}>

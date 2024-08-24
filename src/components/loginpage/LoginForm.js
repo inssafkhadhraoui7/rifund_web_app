@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import styles from "./LoginForm.module.css";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUser, faLock, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 
 function LoginForm() {
   const [username, setUsername] = useState("");
@@ -56,7 +59,7 @@ function LoginForm() {
             value={username}
             onChange={handleUsernameChange}
           />
-          <img src="user2.png" alt="" className={styles.inputIcon} />
+          <FontAwesomeIcon icon={faUser} className={styles.inputIcon} />
         </div>
         <div className={styles.inputGroup}>
           <label htmlFor="password" className={styles.visuallyHidden}>
@@ -70,7 +73,7 @@ function LoginForm() {
             value={password}
             onChange={handlePasswordChange}
           />
-          <img src="password.png" alt="" className={styles.inputIcon} />
+          <FontAwesomeIcon icon={faLock} className={styles.inputIcon} />
         </div>
         {error && <p className={styles.errorMessage}>{error}</p>}
         <button type="submit" className={styles.submitButton}>
@@ -85,8 +88,8 @@ function LoginForm() {
       </div>
       <div className={styles.signupPrompt}>
         <div className={styles.promptIcons}>
-          <img src="face.png" alt="" className={styles.promptIcon} />
-          <img src="gmail.png" alt="" className={styles.promptIcon} />
+        <FontAwesomeIcon icon={faFacebookF} className={styles.promptIcon} />
+        <FontAwesomeIcon icon={faEnvelope} className={styles.promptIcon} />
         </div>
         <p className={styles.promptText}>Vous n'avez pas de compte</p>
         <button onClick={handleSignupClick} className={styles.signupLink}>
@@ -96,5 +99,4 @@ function LoginForm() {
     </section>
   );
 }
-
 export default LoginForm;

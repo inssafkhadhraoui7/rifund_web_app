@@ -32,6 +32,12 @@
   position: relative;
 }
 
+.inputIcon {
+  font-size: 1rem; /* Adjust size of the icon */
+  margin-left: -40px; /* Adjust positioning of the icon */
+  color: #777; /* Adjust color as needed */
+}
+
 .visuallyHidden {
   position: absolute;
   left: -9999px;
@@ -48,12 +54,6 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   background-color: #fff;
-}
-
-.inputIcon {
-  width: 18px;
-  height: 20px;
-  margin-left: -30px; /* Adjust positioning of the icon */
 }
 
 .submitButton {
@@ -79,18 +79,15 @@
   margin-top: 20px;
 }
 
-.promptIcons {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
 .promptIcon {
-  width: 30px;
-  height: 30px;
-  margin: 0 10px;
+  font-size: 2rem; /* Adjust size as needed */
+  margin: 0 10px; /* Adjust spacing between icons */
+  color: #3b5998; /* Facebook color (adjust if needed) */
 }
 
+.promptIcon:last-child {
+  color: #d44638; /* Gmail color (adjust if needed) */
+}
 .promptText {
   margin-bottom: 10px;
 }

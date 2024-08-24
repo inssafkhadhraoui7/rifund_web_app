@@ -8,7 +8,12 @@ const socialIcons = [
   { iconClass: "fab fa-instagram", alt: "Instagram", url: "https://www.instagram.com/rifund" },
   { iconClass: "fas fa-envelope", alt: "Email", url: "mailto:rhgrouperif@gmail.com" }
 ];
-
+function scrollToSection(event) {
+  event.preventDefault();
+  document.querySelector('#stats').scrollIntoView({
+    behavior: 'smooth'
+  });
+}
 function Footer() {
   return (
     <footer className={styles.footer}>

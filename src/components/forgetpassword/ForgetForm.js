@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './ForgetForm.module.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faEnvelope } from '@fortawesome/free-solid-svg-icons';
 function ForgetForm() {
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
@@ -47,7 +48,7 @@ function ForgetForm() {
             value={email}
             onChange={handleEmailChange}
           />
-          <img src="email.png" alt="" className={styles.inputIcon} />
+          <FontAwesomeIcon icon={faEnvelope} className={styles.inputIcon} />
         </div>
         {error && <p className={styles.errorMessage}>{error}</p>}
         <button type="submit" className={styles.submitButton}>Envoyer</button>

@@ -4,6 +4,7 @@
   align-items: center;
   justify-content: center; /* Centers the content horizontally */
   padding: 20px;
+  margin-top: 5%;
   max-width: 100%;
   width: 100%;
 }
