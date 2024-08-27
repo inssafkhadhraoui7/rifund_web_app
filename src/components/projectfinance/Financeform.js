@@ -76,12 +76,12 @@ function Financeform () {
                   />
                 </div>
                 <div className={styles.formGroup}>
-                  <label htmlFor="codesecret" className={styles.formLabel}>
-                    Numéro de carte *
+                  <label htmlFor="codesurete" className={styles.formLabel}>
+                    Code de sûreté *
                   </label>
                   <input
                     type="text"
-                    id="codesecret"
+                    id="codesureté"
                     className={styles.formInput}
                     placeholder="3 chiffres"
                     value={codesecret}

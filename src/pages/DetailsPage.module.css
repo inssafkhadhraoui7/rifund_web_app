@@ -99,7 +99,8 @@ img {
   }
   
   .customLink:hover, .customLink:focus, .customLink:active {
-    color: inherit; 
+    text-decoration: none; 
+   color: #77a83a;
   }
   
   
