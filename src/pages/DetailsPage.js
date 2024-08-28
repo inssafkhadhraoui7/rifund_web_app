@@ -1,16 +1,23 @@
 import { faUsers } from "@fortawesome/free-solid-svg-icons"; // Example icon
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
+import React, { useState } from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
-import 'react-circular-progressbar/dist/styles.css';
+import "react-circular-progressbar/dist/styles.css";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import styles from "./DetailsPage.module.css";
+import Confirmationjoin from "../components/detailsprojet/Confirmationjoin";
 
 function DetailsPage() {
+  const [showConfirmation, setShowConfirmation] = useState(false);
   const percentage = 29;
   const progressBarSize = 190; // Adjust the size as needed
-  const handleClick = () => window.location.href = '/financeprojet';
+  const handleClick = () => (window.location.href = "/financeprojet");
+
+  const handleCommunityClick = () => {
+    setShowConfirmation(true); // This could open a modal or trigger a state change
+  };
+
   return (
     <div>
       <Header />
@@ -43,24 +50,33 @@ function DetailsPage() {
             <span className={styles.red}>3000$</span>
           </p>
           <div>
-            <a href="/CommunautyPage" className={styles.customLink}>
-            <p className={styles.communauty}>
-              <FontAwesomeIcon icon={faUsers} /> Communauté Ferme
-            </p>
-            </a>
+            <div
+              className={styles.customLink}
+              onClick={handleCommunityClick}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => e.key === "Enter" && handleCommunityClick()}
+            >
+              <p className={styles.communauty}>
+                <FontAwesomeIcon icon={faUsers} /> Communauté Ferme
+              </p>
+            </div>
           </div>
         </div>
         <div className={styles.progressbarbutton}>
-          <div style={{ width: progressBarSize, height: progressBarSize }} className={styles.circularbar}>
+          <div
+            style={{ width: progressBarSize, height: progressBarSize }}
+            className={styles.circularbar}
+          >
             <CircularProgressbar
               value={percentage}
               text={`${percentage}%`}
               styles={buildStyles({
                 rotation: 0.5,
-                strokeLinecap: 'butt',
-                trailColor: '#d6d6d6',
-                pathColor: '#ff0000',
-                textColor: '#333',
+                strokeLinecap: "butt",
+                trailColor: "#d6d6d6",
+                pathColor: "#ff0000",
+                textColor: "#333",
               })}
               strokeWidth={10}
             />
@@ -70,6 +86,7 @@ function DetailsPage() {
           </button>
         </div>
       </div>
+      {showConfirmation && <Confirmationjoin />}
       <Footer />
     </div>
   );

@@ -22,8 +22,6 @@ function EditePersoModel() {
               <input type="text" id="nom" className="form-control" placeholder="Créer nouveau nom et prénom " />
               <label htmlFor="email">Email *</label>
               <input type="text" id="email" className="form-control" placeholder="Donnez  nouveau  Email" />
-              <label htmlFor="liens">Liens *</label>
-              <input type="text" id="liens" className="form-control" placeholder="Donnez  nouveau liens" />
             </div>
           </div>
           <div className={`modal-footer ${styles.divButton}`}>
