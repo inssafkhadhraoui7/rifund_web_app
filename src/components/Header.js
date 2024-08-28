@@ -71,7 +71,7 @@ function Header() {
             <ul className={styles.navList}>
               <li>
                 <a href={getNavLinkHref("home")} className={styles.navLink}>
-                  HOME
+                 ACCEUIL
                 </a>
               </li>
               <li>

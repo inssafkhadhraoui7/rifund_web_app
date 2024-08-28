@@ -1,8 +1,8 @@
-import { faUsers } from "@fortawesome/free-solid-svg-icons"; // Example icon
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUsers } from "@fortawesome/free-solid-svg-icons";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import styles from "./DetailsPage.module.css";
@@ -12,10 +12,20 @@ function DetailsPage() {
   const [showConfirmation, setShowConfirmation] = useState(false);
   const percentage = 29;
   const progressBarSize = 190; // Adjust the size as needed
+
   const handleClick = () => (window.location.href = "/financeprojet");
 
   const handleCommunityClick = () => {
-    setShowConfirmation(true); // This could open a modal or trigger a state change
+    setShowConfirmation(true);
+  };
+
+  const handleConfirm = () => {
+    // Logic to navigate to the CommunautyPage or handle confirmation
+    window.location.href = "/communautypage"; // Adjust the URL as needed
+  };
+
+  const handleClose = () => {
+    setShowConfirmation(false);
   };
 
   return (
@@ -86,7 +96,7 @@ function DetailsPage() {
           </button>
         </div>
       </div>
-      {showConfirmation && <Confirmationjoin />}
+      {showConfirmation && <Confirmationjoin onConfirm={handleConfirm} onClose={handleClose} />}
       <Footer />
     </div>
   );

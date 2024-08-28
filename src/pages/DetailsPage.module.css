@@ -57,6 +57,10 @@ img {
 }
 .communauty{
     font-size: 2rem;
+    color:#FF5C00;
+}
+.communauty:hover{
+    color: black;
 }
 .progressbarbutton{
     margin-left: 10%;

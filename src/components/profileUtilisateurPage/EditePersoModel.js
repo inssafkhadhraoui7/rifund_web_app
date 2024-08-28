@@ -1,37 +1,54 @@
 import React, { useState } from "react";
 import styles from "./editePersoModel.module.css";
 
-function EditePersoModel() {
-  const [hovered, setHovered] = useState(false);
+function EditePersoModel({ field, onClose, initialData }) {
+  const [inputValue, setInputValue] = useState(
+    field === "Nom" ? initialData : ""
+  );
+  const [links, setLinks] = useState(field === "Liens" ? initialData : []);
 
-  const handleMouseEnter = () => setHovered(true);
-  const handleMouseLeave = () => setHovered(false);
+  const handleSave = () => {
+    // Implement save logic here, e.g., update the state in the parent component or send the data to an API
+    console.log("Saved:", field === "Nom" ? inputValue : links);
+    onClose();
+  };
+
+  const handleAddLink = () => {
+    setLinks([...links, ""]);
+  };
+
+  const handleLinkChange = (index, value) => {
+    const newLinks = [...links];
+    newLinks[index] = value;
+    setLinks(newLinks);
+  };
 
   return (
-    <div className={`modal fade `} id="editePersoModel" tabIndex="-1" aria-labelledby="editePersoModelLabel" aria-hidden="true">
-      <div className="modal-dialog">
-        <div className="modal-content">
-          <div className={`modal-header ${styles.container}`}>
-            <h1 className="modal-title fs-5" id="editePersoModelLabel">
-              Modifier information
-            </h1>
+    <div className={styles.modal}>
+      <div className={styles.modalContent}>
+        <h2> {field}</h2>
+        {field === "Nom" ? (
+          <input
+            type="text"
+            value={inputValue}
+            onChange={(e) => setInputValue(e.target.value)}
+          />
+        ) : (
+          <div>
+            {links.map((link, index) => (
+              <input
+                key={index}
+                type="text"
+                value={link}
+                onChange={(e) => handleLinkChange(index, e.target.value)}
+              />
+            ))}
+            <button onClick={handleAddLink}>Ajouter un lien</button>
           </div>
-          <div className="modal-body">
-            <div className={styles.card}>
-              <label htmlFor="nom">Nom et Prénom *</label>
-              <input type="text" id="nom" className="form-control" placeholder="Créer nouveau nom et prénom " />
-              <label htmlFor="email">Email *</label>
-              <input type="text" id="email" className="form-control" placeholder="Donnez  nouveau  Email" />
-            </div>
-          </div>
-          <div className={`modal-footer ${styles.divButton}`}>
-            <button className={`${styles.createButton}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-              <span>Modifier</span>
-            </button>
-            <button className={`${styles.supButton} `} data-bs-dismiss="modal">
-              <span>Annuler</span>
-            </button>
-          </div>
+        )}
+        <div className={styles.modalActions}>
+          <button onClick={handleSave}>Enregistrer</button>
+          <button onClick={onClose}>Annuler</button>
         </div>
       </div>
     </div>

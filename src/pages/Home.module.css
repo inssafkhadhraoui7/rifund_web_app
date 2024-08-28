@@ -1,20 +1,50 @@
 
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  50% {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Ensure the container positions its children */
 .imageContainer {
   position: relative;
   width: 100%;
-  height: auto;
-  margin: 0; /* Ensure no margin around the container */
-  padding: 0; /* Ensure no padding around the container */
-}
-
-.imageContainer img {
-  width: 100%;
   height: 700px;
-  display: block;
-  margin: 0; /* Remove any margin from the image */
-  padding: 0; /* Remove any padding from the image */
+  overflow: hidden; /* Hide any overflow from the images */
 }
 
+/* Style for the first image */
+.homeimg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fadeInOut 10s ease-in-out infinite;
+  z-index: 1; /* Ensure it is below the second image */
+}
+
+/* Style for the second image */
+.homeimg2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0; /* Start hidden */
+  animation: fadeInOut 10s ease-in-out infinite 5s; /* Delay animation */
+  z-index: 0; /* Ensure it is above the first image */
+}
+
+
+/* Style for the overlay text */
 .overlayText {
   position: absolute;
   top: 60%;
@@ -24,15 +54,13 @@
   color: black;
   font-size: 24px;
   line-height: 1.5;
-
 }
 
 .Text {
   margin-bottom: 10px;
-  border: 1px solid black; /* Add a white border around the overlay text */
+  border: 1px solid black; /* Add a border around the overlay text */
   padding: 5px; /* Add padding inside the border */
 }
-
 
 .text2 {
   color: black;
@@ -41,4 +69,3 @@
   line-height: 1.3;
   font-weight: bold;
 }
-

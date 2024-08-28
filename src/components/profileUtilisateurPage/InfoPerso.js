@@ -5,24 +5,36 @@ import EditePersoModel from "./EditePersoModel";
 function InfoPerso() {
   const [hovered, setHovered] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedField, setSelectedField] = useState("");
 
-  const handleMouseEnter = () => setHovered(true);
-  const handleMouseLeave = () => setHovered(false);
-  const handleClick = () => (window.location.href = "/creerprojet");
+
+  const openModal = (field) => {
+    setSelectedField(field);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setSelectedField("");
+  };
 
   return (
     <div className={styles.container}>
-      <table class="table table-hover">
+      <table className="table table-hover">
         <thead>
           <tr>
             <th scope="col">Nom</th>
             <td>Imen Missaoui</td>
+            <td className={styles.plus} onClick={() => openModal("Nom")}>
+              <i className="fas fa-chevron-right"></i>
+            </td>
           </tr>
         </thead>
         <tbody>
           <tr>
             <th scope="col">Email</th>
             <td>imenmissaoui08@gmail.com</td>
+            <td></td>
           </tr>
           <tr>
             <th scope="col" className={styles.liens}>
@@ -30,22 +42,26 @@ function InfoPerso() {
             </th>
             <td>
               <div>facebook.com</div>
-              <div>linkedline.com</div>
+              <div>linkedin.com</div>
+            </td>
+            <td className={styles.plus} onClick={() => openModal("Liens")}>
+              <i className="fas fa-plus"></i>
             </td>
           </tr>
         </tbody>
       </table>
-      <button
-        className={styles.createButton}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-        data-bs-toggle="modal"
-        data-bs-target="#editePersoModel"
-      >
-        <img src={hovered ? "ModifierV.png" : "ModifierB.png"} alt="" className={styles.buttonIcon} />
-        <span>Modifier</span>
-      </button>
-      <EditePersoModel />
+
+      {isModalOpen && (
+        <EditePersoModel
+          field={selectedField}
+          onClose={closeModal}
+          initialData={
+            selectedField === "Nom"
+              ? "Imen Missaoui"
+              : ["facebook.com", "linkedin.com"]
+          }
+        />
+      )}
     </div>
   );
 }

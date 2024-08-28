@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import styles from './ForgetForm.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+
 function ForgetForm() {
   const [email, setEmail] = useState('');
   const [error, setError] = useState('');
+  const [successMessage, setSuccessMessage] = useState('');
 
   const validateEmail = (email) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -19,10 +21,10 @@ function ForgetForm() {
     e.preventDefault();
     if (!validateEmail(email)) {
       setError('Veuillez entrer une adresse e-mail valide.');
+      setSuccessMessage('');
     } else {
       setError('');
-      // Proceed with form submission
-      console.log('Email submitted:', email);
+      setSuccessMessage('Un email de réinitialisation a été envoyé.'); // Simulate email sending
     }
   };
 
@@ -39,10 +41,10 @@ function ForgetForm() {
       </p>
       <form className={styles.forgetForm} onSubmit={handleSubmit}>
         <div className={styles.inputGroup}>
-          <label htmlFor="username" className={styles.visuallyHidden}>Votre E-mail</label>
+          <label htmlFor="email" className={styles.visuallyHidden}>Votre E-mail</label>
           <input
             type="text"
-            id="username"
+            id="email"
             placeholder="Tapez votre E-mail"
             className={styles.inputField}
             value={email}
@@ -51,10 +53,11 @@ function ForgetForm() {
           <FontAwesomeIcon icon={faEnvelope} className={styles.inputIcon} />
         </div>
         {error && <p className={styles.errorMessage}>{error}</p>}
+        {successMessage && <p className={styles.successMessage}>{successMessage}</p>}
         <button type="submit" className={styles.submitButton}>Envoyer</button>
       </form>
       <div className={styles.signinPrompt}>
-        <p className={styles.promptText}>vous avez déjà un compte, </p>
+        <p className={styles.promptText}>Vous avez déjà un compte, </p>
         <button onClick={handleSignupClick} className={styles.signinLink}>Se connecter</button>
       </div>
     </section>

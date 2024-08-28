@@ -38,35 +38,35 @@ function App() {
         metaDescription = "Welcome to the Home Page";
         break;
       case "/home":
-        title = "Home Page";
+        title = "Page d'Acceuil";
         metaDescription = "Welcome to the Home Page";
         break;
       case "/contact":
-        title = "Contact Page";
+        title = "Page de contact ";
         metaDescription = "Welcome to the Contact Page";
         break;
       case "/login":
-        title = "Se connecter Page";
+        title = " Page de Se connecter";
         metaDescription = "Welcome to these login  Page";
         break;
       case "/register":
-        title = "S'inscrire Page";
+        title = "Page de S'inscrire ";
         metaDescription = "Welcome to these register Page";
         break;
       case "/password":
-        title = "password Page";
+        title = "Page de mot de passe ";
         metaDescription = "Welcome to these forget Page";
         break;
       case "/creerprojet":
-        title = "create project page";
+        title = "Page Creation d'un projet";
         metaDescription = "Welcome to these create project Page";
         break;
-      case "/financeprojet":
-        title = "finance projet page";
+      case "/financerprojet":
+        title = "financer projet";
         metaDescription = "Welcome to these create project Page";
         break;
       case "/projetdetails":
-        title = "details projet page";
+        title = "details projet ";
         metaDescription = "Welcome to these details project Page";
         break;
       case "/dashbord":

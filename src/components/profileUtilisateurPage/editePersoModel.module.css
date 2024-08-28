@@ -1,128 +1,79 @@
-.container {
-  border-top: 20px #77a83a solid;
-  flex-grow: 1;
-  height: auto;
-  padding-block: 20px;
+/* editePersoModel.module.css */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom-width: 0px !important;
+  z-index: 1000;
 }
-.container > div:first-child {
-  padding: 10px;
-}
-.container img {
-  border-radius: 0%;
+
+.modalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
   width: 400px;
-  height: 300px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.3s ease-in-out;
 }
 
-.actions {
-  display: flex;
-  gap: 30px;
-  justify-content: center;
-}
-.actions span {
-  cursor: pointer;
-}
-.container table {
-  border: solid 2px #77a83a;
-}
-td {
-  vertical-align: middle;
+.modalContent h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
 }
 
-tbody img {
-  width: 120px;
-  height: 80px;
-  border-radius: 0;
-}
-tbody i {
-  font-size: x-large;
+.modalContent input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
-.createButton,
-.supButton {
-  background-color: #77a83a;
+.modalContent button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #77A83A;
   color: #fff;
   border: none;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-right: 4%;
-  padding: 11px 22px;
-  font-size: 16px;
-  font-weight: 600;
+  border-radius: 4px;
   cursor: pointer;
-  width: fit-content;
-  align-self: end;
-  margin-bottom: 40px;
-}
-.createButton:hover {
-  background-color: #fff;
-  color: #77a83a;
-  border: 1px solid #77a83a; /* Border on hover */
-}
-.supButton {
-  background-color: lightslategrey;
-  color: black;
-}
-.supButton:hover {
-  background-color: gray;
+  font-size: 1rem;
 }
 
-.buttonIcon {
-  width: 30px;
-  height: 30px;
-}
-.liens {
-  vertical-align: top;
-}
-.divButton {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+.modalContent button:last-child {
+  background-color: #828282;
 }
 
-.card {
+.modalContent button:hover {
+  background-color: #77A83A;
+}
+
+.modalContent button:last-child:hover {
+  background-color: #828282;
+}
+
+.modalActions {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 20px;
-  width: 100%;
+  margin-top: 2%;
+  justify-content: flex-end;
 }
-.card label {
-  font-weight: 600;
-}
-.card input {
-  margin-bottom: 10px;
-}
-.cardText {
-  padding: 30px;
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-}
-.progressBar {
-  width: 100%;
-  height: 25px;
-  background-color: #edf0c7;
-  border-radius: 20px;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-.progressBar div {
-  display: inline-block;
-  height: 100%;
-  width: 88%;
-  background-color: #77a83a;
-  border-radius: 20px;
-}
-.progressBar span {
-  position: absolute;
-  right: 5px;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }

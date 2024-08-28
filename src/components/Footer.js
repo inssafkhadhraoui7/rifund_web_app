@@ -29,7 +29,7 @@ function Footer() {
           <nav>
             <ul className={styles.footerNav}>
               <li><a href="/">Projets</a></li>
-              <li><a href="#stats">Statistiques</a></li>
+              <li><a href="/home#stats">Statistiques</a></li>
               <li><a href="/contact">Contacts</a></li>
             </ul>
           </nav>

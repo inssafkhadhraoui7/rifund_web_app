@@ -115,25 +115,42 @@
    margin-left: 50%;
   }
   /* styles.module.css */
+/* Add keyframes for the animation */
+/* Add keyframes for the animation */
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-  .aboutSection {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    padding: 20px;
-    width: 70%;
-    height: 500px; /* Specify height with units (e.g., px) */
-    background-color: #77a83a; /* Example background color */
-    margin: 0 auto; /* Center horizontally */
-    text-align: center; /* Center text inside */
-    font-weight: bold;
-  }
-  
-  .aboutTitle {
-    font-family: 'Times New Roman', Times, serif;
-    color: white; /* Text color */
-    font-size:35px; /* Adjust font size */
-  }
-  
+.aboutSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 70%;
+  height: 500px; /* Specify height with units (e.g., px) */
+  background-color: #77a83a; /* Example background color */
+  margin: 0 auto; /* Center horizontally */
+  text-align: center; /* Center text inside */
+  font-weight: bold;
+}
+
+.aboutTitle {
+  font-family: 'Times New Roman', Times, serif;
+  color: white; /* Text color */
+  font-size: 35px; /* Adjust font size */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+.aboutTitle:hover {
+  animation: fadeInSlideUp 3s ease-in-out; /* Apply the animation on hover */
+}
+
   
   

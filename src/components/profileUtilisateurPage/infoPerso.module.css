@@ -24,41 +24,21 @@ td {
   vertical-align: middle;
 }
 
-tbody img {
-  width: 120px;
-  height: 80px;
-  border-radius: 0;
-}
 tbody i {
   font-size: x-large;
 }
-
-.createButton {
-  background-color: #77a83a;
-  color: #fff;
-  border: none;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-right: 4%;
-  padding: 11px 22px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  width: fit-content;
-  align-self: end;
-  margin-bottom: 40px;
-}
-.createButton:hover {
-  background-color: #fff;
-  color: #77a83a;
-  border: 1px solid #77a83a; /* Border on hover */
-}
-
-.buttonIcon {
-  width: 30px;
-  height: 30px;
-}
 .liens {
   vertical-align: top;
+}
+.plus {
+  text-align: center; /* Center the icon in the table cell */
+  cursor: pointer;    /* Change cursor to pointer to indicate it's clickable */
+  padding: 10px;      /* Add some padding for better spacing */
+  color: #4CAF50;     /* Icon color */
+  font-size: 18px;    /* Icon size */
+  transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.plus:hover {
+  color: #77A83A;     /* Change color on hover */
 }
