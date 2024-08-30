@@ -32,6 +32,20 @@ function Categorie() {
           </button>
         ))}
       </div>
+      <nav className={styles.pagination} aria-label="Pagination">
+        <button className={styles.paginationButton} aria-label="Previous page">
+          <img src="./inferieur.svg" alt="Previous" className={styles.paginationIcon} />
+        </button>
+        <button className={`${styles.paginationButton} ${styles.active}`}>1</button>
+        <button className={styles.paginationButton}>2</button>
+        <button className={styles.paginationButton}>3</button>
+        <span className={styles.paginationEllipsis}>...</span>
+        <button className={styles.paginationButton}>49</button>
+        <button className={styles.paginationButton}>50</button>
+        <button className={styles.paginationButton} aria-label="Next page">
+          <img src="./superieur.svg" alt="Next" className={styles.paginationIcon} />
+        </button>
+      </nav>
     </section>
   );
 }

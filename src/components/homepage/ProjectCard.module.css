@@ -1,19 +1,19 @@
-/* ProjectCard.module.css */
-
 .projectCard {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
     max-width: 1600px; /* Adjust as needed */
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the width/height */
+    margin-bottom: 20px; /* Space between cards */
 }
-
 .projectCard:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 .projectImage {
-    width: 95%;
+    width: 100%;
     height: auto;
     margin: 0; /* Ensure no margin is applied */
     border-radius: 0; /* Ensure no border radius is applied */
@@ -22,21 +22,32 @@
 .projectInfo {
     padding: 20px;
     flex-grow: 1; /* Allow the projectInfo section to take up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensure the content is spaced out */
+    width: 100%;
 }
 
 .projectDate {
-    font-size: 1.3rem;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
     color: #888;
 }
 
 .projectTitle {
-    font-size: 1.5rem;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    line-height: 33.6px;
     margin: 10px 0;
 }
 
 .projectDescription {
-    font-size: 1.5rem;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    line-height: 33.6px;
     color: #555;
+    margin-bottom: auto; /* Push the description to the top */
 }
 
 .progressBar {
@@ -45,29 +56,28 @@
     background-color: #f0f0f0;
     overflow: hidden;
     position: relative; /* Added for positioning */
+    width: 100%; /* Ensure the progress bar takes full width */
 }
 
 .progressFill {
     height: 100%;
     background-color: #77A83A; /* Progress bar color */
-    position: relative; /* Added for positioning */
     display: flex;
     align-items: center; /* Center text vertically */
     justify-content: center; /* Center text horizontally */
     color: white; /* Text color */
     font-weight: bold; /* Text style */
-}
-
-.projectActions {
-    margin-top: 10px;
-    align-self: flex-end; /* Ensure the actions are at the bottom */
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    line-height: 33.6px;
 }
 
 .buttonWrapper {
     display: flex;
-    justify-content: center; /* Center align buttons horizontally */
+    justify-content: space-between; /* Ensure buttons are aligned */
     gap: 10px; /* Space between buttons */
     margin-top: 10px; /* Adjust margin as needed */
+    width:100%; /* Ensure buttons take full width */
 }
 
 .moreButton, .donateButton {
@@ -77,8 +87,13 @@
     padding: 8px 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-size: 1.2rem;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    line-height: 33.6px;
+    font-weight: bold;
     height: 40px; /* Fixed height for buttons */
+    flex: 1; /* Make buttons take equal space */
+    text-align: center; /* Center text in button */
 }
 
 .moreButton:hover, .donateButton:hover {

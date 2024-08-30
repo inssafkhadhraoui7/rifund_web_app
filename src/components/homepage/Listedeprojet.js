@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './Listedeprojet.module.css'; // Ensure consistent file naming
 import ProjectCard from './ProjectCard';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSearch } from '@fortawesome/free-solid-svg-icons';
 
 function ListeDeProjet() {
   const featuredProjects = [
@@ -39,16 +41,12 @@ function ListeDeProjet() {
 
       <form className={styles.searchForm}>
         <div className={styles.inputContainer}>
+          <FontAwesomeIcon icon={faSearch} className={styles.searchIcon} />
           <input
             type="search"
             id="projectSearch"
             placeholder="Trouver des dons..."
             className={styles.searchInput}
-          />
-          <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/13e496443de6730e76c9b2382c2a2a87d12e47e47cc91170bdcbe58a31dfda50?apiKey=020fffa760da4a3f892552f6ac11e7d9&"
-            alt="Search"
-            className={styles.searchIcon}
           />
         </div>
       </form>

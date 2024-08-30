@@ -7,7 +7,6 @@
 
 .sectionTitle {
   font-size: 3rem;
-  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -16,10 +15,9 @@
 }
 
 .underline {
-  width: 250px;
+  width: 400px;
   height: 3px;
   background-color: #77A83A;
-  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -29,6 +27,7 @@
 }
 
 .searchForm {
+  margin-top: 40px;
   margin-bottom: 20px;
   display: flex;
   justify-content: center; /* Center align flex items horizontally */
@@ -40,27 +39,30 @@
   align-items: center; /* Center items vertically within container */
 }
 
+
 .searchInput {
-  padding: 8px 30px 8px 8px; /* Adjust padding to accommodate the icon */
-  border: 1px solid #ccc;
-  width: 500px;
-  height: 50px;
-  font-size: 1rem;
+  width: 850px;
+  height: 65px;
+  padding: 20px 32px 20px 32px;
+  border: 1px solid #77A83A;
+
 }
 
 .searchIcon {
   position: absolute;
-  right: 10px; /* Adjust as needed to position the icon within the input */
-  top: 50%; /* Vertically center the icon */
+  right: 10px;
+  top: 50%;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
+  color: #777;
 }
 
 
 .featuredTitle {
-  font-size: 2rem;
-  margin-top: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 33.6px;
+  font-size:24px;
+  margin-top: 40px;
   margin-left: 150px;
   text-align: left; /* Center align the featured title */
 }

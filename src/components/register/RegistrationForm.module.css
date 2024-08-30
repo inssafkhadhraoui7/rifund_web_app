@@ -11,12 +11,14 @@
 .registrationFormTitle {
   text-align: center;
   font-size: 1.5rem;
+  font-family: ' Inter',  sans-serif;
   margin-bottom: 10px;
 }
 
 .registrationInstructions {
   text-align: center;
   color: #666;
+  font-family: ' Inter',  sans-serif;
   margin-bottom: 20px;
 }
 
@@ -28,6 +30,7 @@
 .inputGroup {
   display: flex; /* Display items in a row */
   align-items: center; /* Align items vertically */
+  font-family: ' Inter',  sans-serif;
   margin-bottom: 15px;
   position: relative;
 }
@@ -61,6 +64,7 @@
   margin: 0 auto; /* Center the button horizontally */
   padding: 12px;
   font-size: 1.2rem;
+  font-family: ' Inter',  sans-serif;
   color: #fff;
   background-color: #77a83a;
   border: none;
@@ -77,6 +81,7 @@
 .signupPrompt {
   text-align: center;
   margin-top: 20px;
+  font-family: ' Inter',  sans-serif;
 }
 
 .promptIcon {
@@ -87,15 +92,18 @@
 
 .promptIcon:last-child {
   color: #d44638; /* Gmail color (adjust if needed) */
+  font-family: ' Inter',  sans-serif;
 }
 .promptText {
   margin-bottom: 10px;
+  font-family: ' Inter',  sans-serif;
 }
 
 .signupLink {
   color: #77a83a;
   background: none;
   border: none;
+  font-family: ' Inter',  sans-serif;
   cursor: pointer;
   font-size: 1rem;
   transition: color 0.3s ease;
@@ -107,5 +115,6 @@
 .errorMessage {
   color: red;
   font-size: 0.875rem;
+  font-family: ' Inter',  sans-serif;
   margin-top: 0.5rem;
 }

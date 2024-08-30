@@ -6,42 +6,50 @@
   }
   50% {
     opacity: 0;
-    transform: translateX(50%);
+    transform: translateX(0%);
   }
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
-
-/* Ensure the container positions its children */
+.home{
+  margin: 0;
+}
 .imageContainer {
   position: relative;
-  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0; /* Remove any padding */
   height: 700px;
-  overflow: hidden; /* Hide any overflow from the images */
+  overflow: hidden;
 }
 
-/* Style for the first image */
+
+.homeimg, .homeimg2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 0%;
+  object-fit: cover;
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Remove any padding */
+  left: 0; /* Align the image to the left */
+  top: 0; /* Align the image to the top */
+}
+
 .homeimg {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  animation: fadeInOut 10s ease-in-out infinite;
   z-index: 1; /* Ensure it is below the second image */
+  animation: fadeInOut 10s ease-in-out infinite;
 }
 
-/* Style for the second image */
 .homeimg2 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  z-index: 0; /* Ensure it is above the first image */
   opacity: 0; /* Start hidden */
   animation: fadeInOut 10s ease-in-out infinite 5s; /* Delay animation */
-  z-index: 0; /* Ensure it is above the first image */
 }
+
+
 
 
 /* Style for the overlay text */
@@ -51,6 +59,7 @@
   left: 80%;
   transform: translate(-50%, -50%);
   text-align: left;
+  font-family: 'Inter', sans-serif;
   color: black;
   font-size: 24px;
   line-height: 1.5;
@@ -65,7 +74,8 @@
 .text2 {
   color: black;
   margin-top: 10px;
-  font-size: 50px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size:48px;
   line-height: 1.3;
-  font-weight: bold;
 }

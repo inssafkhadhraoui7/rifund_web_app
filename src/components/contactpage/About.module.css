@@ -39,9 +39,11 @@
   }
   
   .statLabel {
-    font-size: 2em;
+    font-size:20px;
     color: #FF5C00;
-    font-weight: bold;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    line-height: 33.6px;
   }
   
   .sectionHeader {
@@ -58,8 +60,10 @@
   }
   
   .sectionTitle {
-    font-size: 2.5em;
-    font-weight: bold;
+    font-size:24px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    line-height: 33.6px;
     margin: 0;
   }
   
@@ -103,8 +107,10 @@
   }
   
   .serviceName {
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    line-height: 33.6px;
     margin: 0;
   }
   
@@ -142,14 +148,10 @@
 }
 
 .aboutTitle {
-  font-family: 'Times New Roman', Times, serif;
+    font-family: 'Inter', sans-serif;
   color: white; /* Text color */
-  font-size: 35px; /* Adjust font size */
+  font-size: 30px; /* Adjust font size */
   transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
-}
-
-.aboutTitle:hover {
-  animation: fadeInSlideUp 3s ease-in-out; /* Apply the animation on hover */
 }
 
   

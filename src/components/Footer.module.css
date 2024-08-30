@@ -17,12 +17,12 @@
 }
 
 .sectionTitle {
-  font: 600 20px/140% Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font: 600 20px/140% 'Inter' sans-serif;
   margin-bottom: 25px;
 }
 
 .aboutText {
-  font: 400 18px/25px Roboto, -apple-system, Roboto, Helvetica, sans-serif;
+  font: 400 18px/25px'Inter', sans-serif;
 }
 
 .linksSection {
@@ -42,7 +42,7 @@
 .footerNav a {
   color: #fff;
   text-decoration: none;
-  font: 500 18px/140% Inter, sans-serif;
+  font: 500 18px/140% 'Inter', sans-serif;
 }
 
 .footerNav li a:hover {
@@ -76,7 +76,7 @@
   border: 1px solid #2c2c2c;
   background-color: #fff;
   color: #b3b3b3;
-  font: 400 16px/100% Inter, sans-serif;
+  font: 400 16px/100% 'Inter', sans-serif;
   margin-right: 10px; /* spacing between input and button */
 }
 
@@ -85,7 +85,7 @@
   border: 1px solid #2c2c2c;
   background-color: #fff;
   color: #000;
-  font: 700 16px/100% Inter, sans-serif;
+  font: 700 16px/100% 'Inter', sans-serif;
   cursor: pointer;
 }
 
@@ -95,7 +95,7 @@
 }
 
 .socialText {
-  font: 700 22px/120% Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font: 700 22px/120% 'Inter, -apple-system, Roboto, Helvetica, sans-serif';
   margin-right: 20px;
 }
 
@@ -134,13 +134,13 @@
 
 .copyrightText {
   
-  font: 700 15px/140% Inter, sans-serif;
+  font: 700 15px/140% 'Inter', sans-serif;
   color: #77A83A;
   margin-right: 10px;
 }
 
 .copyrightYear {
-  font: 700 15px/120% Inter, sans-serif;
+  font: 700 15px/120% 'Inter', sans-serif;
 }
 
 @media (max-width: 991px) {

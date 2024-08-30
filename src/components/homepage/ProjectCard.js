@@ -18,6 +18,7 @@ function ProjectCard({ date, title, description, progress, image }) {
         <time className={styles.projectDate}>{date}</time>
         <h3 className={styles.projectTitle}>{title}</h3>
         <p className={styles.projectDescription}>{description}</p>
+        
         <div className={styles.progressBar}>
           <div
             className={styles.progressFill}
@@ -25,6 +26,7 @@ function ProjectCard({ date, title, description, progress, image }) {
           >
             {progress}%
           </div>
+        </div>
         </div>
         <div className={styles.buttonWrapper}>
           <button className={styles.moreButton} onClick={handleDetailsClick}>
@@ -34,7 +36,6 @@ function ProjectCard({ date, title, description, progress, image }) {
             Faire un don
           </button>
         </div>
-      </div>
     </article>
   );
 }

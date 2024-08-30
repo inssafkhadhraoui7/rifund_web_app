@@ -38,8 +38,9 @@
 
 .navLink {
   color: #000;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   text-decoration: none;
   padding: 12px 0;
   position: relative; /* Ensure the underline is positioned correctly */
@@ -74,8 +75,9 @@
   gap: 12px;
   margin-right: 4%;
   padding: 11px 22px;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
   cursor: pointer;
 }
 
